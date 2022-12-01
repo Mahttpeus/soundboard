@@ -1,0 +1,64 @@
+﻿body {
+    background: #F6F7EB;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Bungee', cursive;
+    min-height: 100vh;
+
+}
+
+h1 {
+    color: #E94F37;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.soundboard {
+    background: #393E41;
+    box-shadow: 6px 8px 0px #55595c, 10px 10px 10px rgb(102, 100, 100);
+    border-radius: 10px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+
+}
+
+.tecla {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 3px 3px 0 #7a7b7c;
+    color: #E94F37;
+    cursor: pointer;
+    height: 120px;
+    font-size: .90em;
+    /* font-weight: bold; */
+    font-family: 'Bungee', cursive;
+    padding: 5px;
+    text-align: center;
+    width: 120px;
+}
+
+.tecla.ativa,
+.tecla:active {
+    background-color: #E94F37;
+    border: 4px solid #E94F37;
+    box-shadow: 3px 3px 0 #b93a26 inset;
+    color: #fff;
+}
+
+.tecla.focus,
+.tecla:focus {
+    outline: none;
+    box-shadow: 1px 1px 10px #ff3112;
+}
+
+
+.tecla.active:focus,
+.tecla:active:focus {
+    box-shadow: 3px 3px 0 #b93a26 inset, 1px 1px 10px #ff3112;
+
+}
