@@ -62,3 +62,12 @@ h1 {
     box-shadow: 3px 3px 0 #b93a26 inset, 1px 1px 10px #ff3112;
 
 }
+
+@media screen and (max-width: 768px) {
+    .soundboard{
+        grid-template-columns: repeat(3, 1fr);
+                
+
+    }
+    
+}
